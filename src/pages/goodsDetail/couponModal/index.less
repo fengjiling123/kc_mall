@@ -1,0 +1,72 @@
+.--coupon-modal {
+  overflow: hidden;
+  .am-modal-content {
+    border-top-left-radius: 0.1rem;
+    border-top-right-radius: 0.1rem;
+  }
+  .modal-content {
+    padding: 0 0.15rem;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    max-height: 5.5rem;
+    .title {
+      font-size: 0.16rem;
+      font-weight: bold;
+      text-align: center;
+      line-height: 0.22rem;
+      padding: 0.2rem 0 0.14rem;
+      border-bottom: 1px solid #f5f6f8;
+      color: #2d343b;
+      flex-shrink: 0;
+    }
+    .coupons {
+      flex: 1;
+      overflow: auto;
+      -webkit-overflow-scrolling: touch;
+      .coupon-item {
+        // background-image: url("../../../assets/images/quan@3x.png");
+        background-size: cover;
+        margin-top: 0.15rem;
+        display: flex;
+        justify-content: space-between;
+        color: #ff8816;
+        height: 0.97rem;
+        > div:first-child {
+          padding: 0.05rem 0 0 0.2rem;
+          text-align: left;
+        }
+        > div:last-child {
+          width: 1.05rem;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+        }
+      }
+    }
+    .button {
+      background: #ffb516;
+      border-radius: 22.5px;
+      margin: 0.1rem 0.2rem;
+      height: 0.45rem;
+      font-size: 0.16rem;
+      flex-shrink: 0;
+      color: #fff;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+  }
+
+  .success-tag {
+    background-color: rgba(58, 58, 58, 0.9);
+    line-height: 1.5;
+    padding: 9px 15px;
+    border-radius: 3px;
+    position: fixed;
+    color: #fff;
+    top: 2.5rem;
+    left: 1.25rem;
+    z-index: 999999;
+  }
+}

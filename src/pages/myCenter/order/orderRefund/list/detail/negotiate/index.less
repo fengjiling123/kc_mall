@@ -1,0 +1,62 @@
+.--orderNegotiatePage {
+  display: flex;
+  flex-direction: column;
+  background: #f5f6f8;
+  height: 100vh;
+
+  .messageGroup {
+    display: flex;
+    flex-direction: row;
+    .content {
+      display: flex;
+      flex-direction: column;
+      margin-right: 0.1rem;
+      justify-content: center;
+      min-height: 0.8rem;
+      width: 100%;
+      .nameGroup {
+        display: flex;
+        flex-direction: row;
+        align-content: center;
+        height: 18px;
+        line-height: 18px;
+        margin-top: 0.1rem;
+        .name {
+          flex: auto;
+          font-size: 0.14rem;
+          height: 16px;
+          line-height: 16px;
+        }
+        .time {
+          flex: none;
+          color: #657281;
+          font-size: 0.12rem;
+          word-break: keep-all;
+        }
+      }
+      .explanation {
+        color: #657281;
+        font-size: 0.12rem;
+        margin-top: 0.02rem;
+        line-height: 0.16rem;
+        margin-bottom: 0.1rem;
+        word-break: break-all;
+      }
+    }
+  }
+
+  .am-list-body:before {
+    content: "" !important;
+    background-color: #f5f6f8 !important;
+  }
+
+  .am-list-body:after {
+    content: "" !important;
+    background-color: #f5f6f8 !important;
+  }
+
+  .am-tabs-default-bar-tab:after {
+    content: "" !important;
+    background-color: #f5f6f8 !important;
+  }
+}

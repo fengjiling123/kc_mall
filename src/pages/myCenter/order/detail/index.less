@@ -1,0 +1,348 @@
+.--orderDetailPage {
+  display: flex;
+  flex-direction: column;
+  background: #f5f6f8;
+  height: 100vh;
+
+  .scrollView {
+    display: flex;
+    flex-direction: column;
+    overflow: scroll;
+    -webkit-overflow-scrolling: touch;
+    flex: auto;
+
+    .orderCard {
+      flex: none;
+      display: flex;
+      flex-direction: column;
+      background: #ffffff;
+      border-radius: 0.1rem;
+      margin: 0.1rem 0.15rem 0rem 0.15rem;
+      padding: 0.15rem 0.15rem 0.15rem 0.15rem;
+      font-size: 0.14rem;
+
+      .storeGroup {
+        width: 100%;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+
+        .store {
+          display: flex;
+          flex-direction: row;
+          align-items: center;
+
+          .storeName {
+            margin-right: 0.05rem;
+          }
+        }
+
+        .storeStatus {}
+      }
+
+      .drugGroup {
+        display: flex;
+        flex-direction: row;
+        margin-top: 0.1rem;
+
+        .drugContent {
+          display: flex;
+          flex: auto;
+          flex-direction: column;
+          justify-content: space-between;
+          margin-left: 0.1rem;
+          margin-top: 0.03rem;
+
+          .drug-spec {
+            font-size: 0.12rem;
+            color: #657281;
+            padding: 0.04rem 0.06rem;
+            background: #F5F6F8;
+            border-radius: 10px;
+          }
+
+          .amountGroup {
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+
+            .priceGroup {
+              display: flex;
+              flex-direction: row;
+              color: #ff5000;
+              align-items: flex-end;
+
+              .pricePrefix {
+                font-size: 0.12rem;
+                margin-bottom: 0.01rem;
+              }
+            }
+          }
+        }
+      }
+
+      .drugItem {
+        display: flex;
+        flex-direction: column;
+
+        .bottomGroup {
+          display: flex;
+          justify-content: space-between;
+
+          .linkus {
+            padding: 0.04rem 0.1rem 0.04rem 0.1rem;
+            font-size: 0.14rem;
+            border: 0.01rem solid #657281;
+            border-radius: 0.16rem;
+            color: #657281;
+          }
+        }
+      }
+    }
+
+    .statusCard {
+      flex: none;
+      background: rgba(101, 114, 129, 1);
+      border-radius: 0.1rem;
+
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+      justify-content: space-between;
+      height: 0.6rem;
+      margin-left: 0.15rem;
+      margin-right: 0.15rem;
+
+      .status {
+        margin-left: 0.18rem;
+        font-size: 0.16rem;
+        color: white;
+      }
+
+      .time {
+        margin-right: 0.18rem;
+        font-size: 0.14rem;
+        color: white;
+      }
+    }
+
+    .addressCard {
+      display: flex;
+      flex: none;
+      flex-direction: column;
+      background: rgba(255, 255, 255, 1);
+      border-radius: 0.1rem;
+      margin-left: 0.15rem;
+      margin-right: 0.15rem;
+      margin-top: 0.1rem;
+      align-items: center;
+
+      .cardItem {
+        display: flex;
+        flex: auto;
+        width: 100%;
+        height: 0.7rem;
+        flex-direction: row;
+        align-items: center;
+
+        .addressGroup {
+          display: flex;
+          flex-direction: column;
+          flex: auto;
+
+          .people {
+            margin-bottom: 0.05rem;
+            font-size: 0.16rem;
+            font-weight: bold;
+          }
+
+          .express {
+            font-size: 0.14rem;
+            margin-right: 0.1rem;
+          }
+
+          .address {
+            margin-top: 0.05rem;
+            font-size: 0.14rem;
+            margin-right: 0.1rem;
+          }
+        }
+      }
+
+      .line {
+        width: 100%;
+        height: 0.01rem;
+        background: #f5f6f8;
+      }
+    }
+
+    .infoCard {
+      flex: none;
+      display: flex;
+      flex-direction: column;
+      background: rgba(255, 255, 255, 1);
+      border-radius: 0.1rem;
+      margin-left: 0.15rem;
+      margin-right: 0.15rem;
+      margin-top: 0.1rem;
+
+      padding-top: 0.1rem;
+      padding-bottom: 0.1rem;
+
+      .infoGroup {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        margin: 0.08rem 0.2rem;
+        font-size: 14px;
+
+        .money {
+          color: #ff5000;
+        }
+      }
+
+      //.big {
+      //  padding-top: 0.05rem;
+      //  font-size: 18px;
+      //}
+    }
+
+    .timeCard {
+      flex: none;
+      display: flex;
+      flex-direction: column;
+      background: rgba(255, 255, 255, 1);
+      border-radius: 0.1rem;
+      margin-left: 0.15rem;
+      margin-right: 0.15rem;
+      margin-top: 0.1rem;
+
+      padding-top: 0.1rem;
+      padding-bottom: 0.1rem;
+
+      .timeGroup {
+        display: flex;
+        flex-direction: row;
+        margin: 0.08rem 0.2rem;
+
+        .name {
+          width: 0.8rem;
+          flex: none;
+        }
+
+        .value {
+          flex: none;
+        }
+
+        .auto {
+          flex: auto;
+        }
+
+        .copy {
+          min-width: 0.3rem;
+          color: #ff5000;
+        }
+      }
+    }
+
+    .bottomCard {
+      flex: none;
+      display: flex;
+      flex-direction: row;
+      background: white;
+      padding-top: 0.05rem;
+      padding-bottom: 0.05rem;
+      position: fixed;
+      width: 100%;
+      bottom: 0;
+
+      .auto {
+        flex: auto;
+      }
+
+      .cancel {
+        padding: 0 0.15rem 0 0.15rem;
+        box-sizing: border-box;
+        -webkit-box-sizing: border-box;
+        height: 0.3rem;
+        line-height: 0.3rem;
+
+        margin-left: 0.1rem;
+        font-size: 0.14rem;
+        border: 0.01rem solid #657281;
+        border-radius: 0.16rem;
+        color: #657281;
+      }
+
+      .linkus {
+        padding: 0 0.15rem 0 0.15rem;
+        box-sizing: border-box;
+        -webkit-box-sizing: border-box;
+        height: 0.3rem;
+        line-height: 0.3rem;
+
+        font-size: 0.14rem;
+        border: 0.01rem solid #657281;
+        border-radius: 0.16rem;
+        color: #657281;
+      }
+
+      .pay {
+        padding: 0 0.15rem 0 0.15rem;
+        box-sizing: border-box;
+        -webkit-box-sizing: border-box;
+        height: 0.3rem;
+        line-height: 0.3rem;
+
+        margin-left: 0.1rem;
+        margin-right: 0.2rem;
+        font-size: 0.14rem;
+        background: #ffb516;
+        border-radius: 0.16rem;
+        color: white;
+      }
+
+      .refund {
+        padding: 0 0.15rem 0 0.15rem;
+        box-sizing: border-box;
+        -webkit-box-sizing: border-box;
+        height: 0.3rem;
+        line-height: 0.3rem;
+
+        margin-left: 0.1rem;
+        font-size: 0.14rem;
+        border: 0.01rem solid #657281;
+        border-radius: 0.16rem;
+        color: #657281;
+      }
+
+      .remind {
+        padding: 0 0.15rem 0 0.15rem;
+        box-sizing: border-box;
+        -webkit-box-sizing: border-box;
+        height: 0.3rem;
+        line-height: 0.3rem;
+
+        margin-left: 0.1rem;
+        font-size: 0.14rem;
+        border: 0.01rem solid #ffb516;
+        border-radius: 0.16rem;
+        color: #ffb516;
+      }
+
+      .confirm {
+        padding: 0 0.15rem 0 0.15rem;
+        box-sizing: border-box;
+        -webkit-box-sizing: border-box;
+        height: 0.3rem;
+        line-height: 0.3rem;
+
+        margin-left: 0.1rem;
+        font-size: 0.14rem;
+        border: 0.01rem solid #ffb516;
+        border-radius: 0.16rem;
+        color: #ffb516;
+      }
+    }
+  }
+}

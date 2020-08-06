@@ -1,0 +1,47 @@
+.--invalid-page {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  .top {
+    height: 0.45rem;
+    flex-shrink: 0;
+  }
+
+  .scroll-view {
+    flex: 1;
+    overflow: auto;
+
+    .empty-info {
+      background: #fff;
+      padding-bottom: 0.2rem;
+      margin-bottom: 0.1rem;
+      .img-conatiner {
+        display: flex;
+        justify-content: center;
+        padding-top: 0.1rem;
+        img {
+          width: 2rem;
+          height: 1.49rem;
+        }
+      }
+
+      .text {
+        line-height: 0.2rem;
+        margin: 0.04rem 0 0.2rem;
+        color: #657281;
+        text-align: center;
+      }
+
+      .button {
+        text-align: center;
+        color: #ff8816;
+        span {
+          border: 1px solid #ff8816;
+          border-radius: 0.2rem;
+          font-size: 0.16rem;
+          padding: 0.06rem 0.38rem;
+        }
+      }
+    }
+  }
+}

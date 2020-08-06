@@ -1,0 +1,53 @@
+.addAddress {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: 100%;
+    .topBar {
+        height: 44px;
+        width: 100%;
+    }
+    .content {
+        flex: 1;
+        // overflow:hidden;
+        background: #F5F6F8;
+        .item {
+            display: flex;
+            padding: 20px;
+            background: #fff;
+            justify-content: space-between;
+            align-items: center;
+            color: #2D343B;
+            font-size: 14px;
+            .rightView {
+                display: flex;
+                align-items: center;
+                .selectArea {
+                    color:#A1ADB9;
+                }
+            }
+            .input {
+                width: 2.2rem;
+            }
+            .goImg {
+                width: 7px;
+                height: 10px;
+                margin-left: 10px;
+            }
+        }
+        .lineView {
+            background: #F5F6F8;
+            height: 1px;
+            margin: 0px 4px;
+        }
+    }
+    .am-list-item .am-list-line .am-list-content {
+        font-size: 14px;
+    }
+}
+
+input::-webkit-input-placeholder {
+    /* placeholder颜色  */
+    color:#A1ADB9;
+}
+

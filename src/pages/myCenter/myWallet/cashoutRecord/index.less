@@ -1,0 +1,49 @@
+.--cashout-record {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  .scroll-view {
+    flex: 1;
+    overflow: auto;
+    .text {
+      text-align: center;
+      color: #a1adb9;
+      font-size: 0.13rem;
+      line-height: 0.18rem;
+      margin: 0.1rem 0;
+    }
+
+    .all-record {
+      background: #fff;
+      border-radius: 0.05rem;
+      margin: 0 0.15rem;
+      .record-item {
+        display: flex;
+        padding: 0.15rem 0.17rem 0.15rem 0.1rem;
+        align-items: center;
+        border-bottom: 1px solid #f5f6f8;
+        &:last-child {
+          border-bottom: none;
+        }
+        > div:first-child {
+          flex: 1;
+          .name {
+            line-height: 0.21rem;
+            font-size: 0.15rem;
+            font-weight: bold;
+          }
+          .time {
+            line-height: 0.18rem;
+            font-size: 0.13rem;
+            color: #657281;
+            margin-top: 3px;
+          }
+        }
+      }
+      .money {
+        font-weight: bold;
+        font-size: 0.2rem;
+      }
+    }
+  }
+}

@@ -1,0 +1,95 @@
+.goods-detail-spec-modal {
+  .main {
+    padding: 0.15rem;
+    height: 3.84rem;
+  }
+  .mainNoSpec {
+    padding: 0.15rem;
+    height: 1.68rem;
+  }
+  .goods-info {
+    display: flex;
+
+    img {
+      width: 0.8rem;
+      height: 0.8rem;
+    }
+
+    .goods-spec-price {
+      color: #ff5000;
+    }
+  }
+
+  .spec-list {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    margin-top: 0.17rem;
+    margin-bottom: 0.17rem;
+
+    .tip-title {
+      font-size: 0.12rem;
+      color: #2d343b;
+      margin-bottom: 0.23rem;
+    }
+
+    .spec-item-wrapper {
+      max-height: 1.5rem;
+      overflow-y: scroll;
+    }
+
+    .spec-item {
+      padding: 6px 10px;
+      background-color: #f5f6f8;
+      color: #2d343b;
+      border-radius: 12px;
+      margin-right: 0.2rem;
+      margin-bottom: 0.08rem;
+      font-size: 0.12rem;
+      border: 1px solid #f5f6f8;
+
+      &.selected {
+        border: 1px solid #ff5000;
+        color: #ff5000;
+        background-color: #fff3ed;
+      }
+
+      &.disabled {
+        color: #A1ADB9;
+      }
+    }
+  }
+
+  .buy-num-section {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 10px;
+    .tip-title {
+      font-size: 0.12rem;
+      color: #2d343b;
+    }
+  }
+
+  .confirm-btn::before {
+    border: none !important;
+  }
+
+  .num {
+    .am-stepper-input-wrap {
+      height: 18px;
+      line-height: 18px;
+      border: 1px solid #f1f1f1;
+    }
+
+    .am-stepper-handler {
+      width: 18px !important;
+      height: 18px !important;
+      line-height: 18px !important;
+      border-radius: 0;
+    }
+
+    .am-icon-xxs {
+      width: 10px !important;
+    }
+  }
+}

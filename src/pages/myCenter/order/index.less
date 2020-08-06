@@ -1,0 +1,154 @@
+.--orderPage {
+  display: flex;
+  flex-direction: column;
+  background: #f5f6f8;
+  height: 100vh;
+
+  .cardParent {
+    display: flex;
+    flex-direction: column;
+    background: #f5f6f8;
+  }
+
+  .orderCard {
+    display: flex;
+    flex-direction: column;
+    background: #ffffff;
+    border-radius: 0.1rem;
+    margin: 0rem 0.1rem 0.1rem 0.1rem;
+    padding: 0.15rem 0.15rem 0.15rem 0.15rem;
+    font-size: 0.14rem;
+
+    .storeGroup {
+      width: 100%;
+      display: flex;
+      flex-direction: row;
+
+      .store {
+        flex: auto;
+        display: flex;
+        flex: auto;
+        flex-direction: row;
+        align-items: center;
+
+        .storeName {
+          margin-right: 0.05rem;
+        }
+      }
+
+      .storeStatus {
+        flex: none;
+        color: #ffb516;
+      }
+    }
+
+    .drugGroup {
+      display: flex;
+      flex-direction: row;
+      margin-top: 0.1rem;
+
+      .drugContent {
+        display: flex;
+        flex: auto;
+        flex-direction: column;
+        justify-content: space-between;
+        margin-left: 0.1rem;
+        margin-top: 0.03rem;
+
+        .drug-spec {
+          font-size: 0.12rem;
+          color: #657281;
+          padding: 0.04rem 0.06rem;
+          background: #F5F6F8;
+          border-radius: 10px;
+        }
+
+        .amountGroup {
+          display: flex;
+          flex-direction: row;
+          justify-content: space-between;
+
+          .priceGroup {
+            display: flex;
+            flex-direction: row;
+            color: #ff5000;
+            align-items: flex-end;
+
+            .pricePrefix {
+              font-size: 0.12rem;
+              margin-bottom: 0.01rem;
+            }
+          }
+        }
+      }
+    }
+
+    .bottomGroup {
+      display: flex;
+      justify-content: space-between;
+      margin-top: 0.1rem;
+      margin-left: 0.05rem;
+      align-items: center;
+
+      .buttonGroup {
+        display: flex;
+        flex-direction: row;
+
+        .cancel {
+          padding: 0 0.1rem 0 0.1rem;
+          box-sizing: border-box;
+          -webkit-box-sizing: border-box;
+          height: 0.28rem;
+          line-height: 0.26rem;
+
+          font-size: 0.12rem;
+          border: 0.01rem solid #657281;
+          border-radius: 0.14rem;
+        }
+
+        .pay {
+          padding: 0 0.1rem 0 0.1rem;
+          box-sizing: border-box;
+          -webkit-box-sizing: border-box;
+          height: 0.28rem;
+          line-height: 0.28rem;
+
+          margin-left: 0.1rem;
+          font-size: 0.12rem;
+          border: 0.01rem solid #ffb516;
+          color: #ffb516;
+          border-radius: 0.14rem;
+        }
+
+        .remind {
+          padding: 0 0.1rem 0 0.1rem;
+          box-sizing: border-box;
+          -webkit-box-sizing: border-box;
+          height: 0.28rem;
+          line-height: 0.28rem;
+
+          margin-left: 0.1rem;
+          font-size: 0.12rem;
+          border: 0.01rem solid #ffb516;
+          border-radius: 0.14rem;
+          color: #ffb516;
+        }
+      }
+    }
+  }
+
+  .am-list-body:before {
+    content: "" !important;
+    background-color: #f5f6f8 !important;
+  }
+
+  .am-list-body:after {
+    content: "" !important;
+    background-color: #f5f6f8 !important;
+  }
+
+  .am-tabs-default-bar-tab:after {
+    content: "" !important;
+    background-color: #f5f6f8 !important;
+  }
+}

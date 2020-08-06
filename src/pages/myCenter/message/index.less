@@ -1,0 +1,92 @@
+.--messagePage {
+  display: flex;
+  flex-direction: column;
+  background: #ffffff;
+  height: 100vh;
+
+  .messageNotice {
+    display: flex;
+    flex: none;
+    flex-direction: row;
+    align-items: center;
+    height: 0.7rem;
+    line-height: 0.7rem;
+    margin-right: 0.15rem;
+    .content {
+      flex: auto;
+      color: #2d343b;
+      font-size: 0.14rem;
+      font-weight: bold;
+    }
+    .count {
+      width: 0.3rem;
+      height: 0.19rem;
+      padding: 0.01rem 0.05rem;
+      line-height: 0.19rem;
+      background: rgba(255, 181, 22, 1);
+      border-radius: 10px;
+      color: #ffffff;
+      text-align: center;
+      margin-right: 0.1rem;
+    }
+  }
+
+  .line {
+    flex: none;
+    height: 0.01rem;
+    width: 100%;
+    background: #f5f6f8;
+  }
+
+  .messageItem {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    height: 0.7rem;
+    flex: auto;
+    margin-right: 0.15rem;
+
+    .right {
+      width: 100%;
+    }
+
+    .titleGroup {
+      flex: auto;
+      display: flex;
+      justify-content: space-between;
+      .title {
+        flex: auto;
+        font-weight: bold;
+        color: #2d343b;
+      }
+      .time {
+        color: #657281;
+      }
+    }
+    .contentGroup {
+      display: flex;
+      margin-top: 0.1rem;
+      color: #657281;
+      justify-content: space-between;
+
+      .content {
+        line-height: 0.2rem;
+      }
+      .count {
+        flex: none;
+        background: #ffb516;
+        border-radius: 2rem;
+        text-align: center;
+        line-height: 0.2rem;
+        color: #fff;
+        width: 0.2rem;
+        height: 0.2rem;
+      }
+    }
+  }
+
+  .am-swipe-actions-right {
+    padding-top: 0.02rem;
+    padding-bottom: 0.02rem;
+  }
+}

@@ -1,0 +1,74 @@
+.--expressPage {
+  display: flex;
+  flex-direction: column;
+  background: #f5f6f8;
+  height: 100vh;
+  .topLay {
+    flex: none;
+    padding-top: 0.05rem;
+    padding-left: 0.1rem;
+    padding-bottom: 0.1rem;
+    margin-bottom: 0.05rem;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    background: #ffffff;
+    box-shadow: 0 0 4px 0 rgba(0, 0, 0, 0.1);
+    border-radius: 0 0 20px 20px;
+    .name {
+      font-size: 0.18rem;
+      margin-left: 0.2rem;
+      margin-right: 0.1rem;
+    }
+    .number {
+      font-size: 0.18rem;
+      margin-left: 0.1rem;
+    }
+  }
+
+  .express {
+    overflow: scroll;
+    -webkit-overflow-scrolling: touch;
+    flex: 1;
+    padding: 0.15rem;
+    .expressItem {
+      border-left: 3px solid #ccc;
+      padding-left: 0.1rem;
+      position: relative;
+      .round {
+        position: absolute;
+        width: 0.12rem;
+        height: 0.12rem;
+        background: #cccccc;
+        border-radius: 50%;
+        z-index: 2;
+        left: -8px;
+        top: -1px;
+        &.active {
+          background: #333333;
+        }
+      }
+
+      .content {
+        color: #999999;
+        line-height: .2rem;
+        .active {
+          color: #333333;
+        }
+      }
+
+      .time {
+        color: #999999;
+        font-size: 0.12rem;
+        padding-bottom: .3rem;
+        margin-top: .1rem;
+        &.active {
+          color: #333333;
+        }
+      }
+      &:last-child{
+        border-color: transparent;
+      }
+    }
+  }
+}

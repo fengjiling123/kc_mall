@@ -1,0 +1,84 @@
+.--coupon-detail {
+  display: flex;
+  height: 100%;
+  flex-direction: column;
+
+  .scroll-view{
+    background: #f04e41;
+    position: relative;
+    padding-bottom: 0.1rem;
+    flex: 1;
+    overflow: auto;
+  }
+
+  .b-wrapper {
+    background: #f04e41;
+    position: relative;
+    padding-bottom: 0.1rem;
+  }
+  .b-wrapper:first-child {
+    flex-shrink: 0;
+  }
+  .b-wrapper:last-child {
+    flex: auto;
+    overflow: auto;
+  }
+
+  .content {
+    .bg-img {
+      width: 100%;
+      position: absolute;
+      left: 0;
+      top: 0;
+    }
+    .danduyouhuiquan {
+      width: 2.77rem;
+      position: absolute;
+      left: 0.49rem;
+      top: 2.74rem;
+      z-index: 3;
+    }
+    .coupon-item {
+      position: relative;
+      padding: 0.8rem 0.1rem 0;
+      .coupon-bg {
+        position: absolute;
+        width: 3.55rem;
+        left: 0.1rem;
+        top: 0.1rem;
+        z-index: 0;
+      }
+      text-align: center;
+      .coupon-name {
+        font-size: 0.18rem;
+        line-height: 0.25rem;
+        // font-weight: bold;
+      }
+      .money {
+        line-height: 0.56rem;
+        height: 0.56rem;
+        margin-top: 0.07rem;
+        color: #f04e41;
+        font-size: 0.4rem;
+        span {
+          display: inline-block;
+        }
+      }
+      .button {
+        margin-top: 0.18rem;
+        margin-bottom: 0.1rem;
+
+        span {
+          border-radius: .05rem;
+          display: inline-block;
+          font-size: 0.16rem;
+          background: #f04e41;
+          color: #fff;
+          width: 1.7rem;
+          font-size: 0.16rem;
+          padding: 0.1rem 0;
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,354 @@
+.--orderConfirmPage {
+  display: flex;
+  flex-direction: column;
+  background: #f5f6f8;
+  height: 100vh;
+
+  .scrollView {
+    display: flex;
+    flex-direction: column;
+    overflow: scroll;
+    -webkit-overflow-scrolling: touch;
+    flex: auto;
+    margin-bottom: 0.45rem;
+
+    .orderCard {
+      display: flex;
+      flex: none;
+      flex-direction: column;
+      background: #ffffff;
+      border-radius: 0.1rem;
+      margin: 0.1rem 0.15rem 0rem 0.15rem;
+      padding: 0.15rem 0.15rem 0.15rem 0.15rem;
+      font-size: 0.14rem;
+
+      .storeGroup {
+        width: 100%;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+
+        .store {
+          display: flex;
+          flex-direction: row;
+          align-items: center;
+
+          .storeName {
+            margin-right: 0.05rem;
+          }
+        }
+
+        .storeStatus {}
+      }
+
+      .drugGroup {
+        display: flex;
+        flex-direction: row;
+        margin-top: 0.1rem;
+
+        .drugContent {
+          display: flex;
+          flex: auto;
+          flex-direction: column;
+          justify-content: space-between;
+          margin-left: 0.1rem;
+          margin-top: 0.03rem;
+
+          .drug-spec {
+            display: inline-block;
+            margin-bottom: 0.1rem;
+            font-size: 0.12rem;
+            color: #657281;
+            padding: 0.04rem 0.06rem;
+            background: #f5f6f8;
+            border-radius: 10px;
+          }
+
+          .amountGroup {
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+
+            .priceGroup {
+              display: flex;
+              flex-direction: row;
+              color: #ff5000;
+              align-items: flex-end;
+
+              .pricePrefix {
+                font-size: 0.12rem;
+                margin-bottom: 0.01rem;
+              }
+            }
+          }
+        }
+      }
+
+      .orderTipsGroup {
+        display: flex;
+        flex-direction: row;
+
+        .name {
+          flex: none;
+          width: 0.8rem;
+          line-height: 0.3rem;
+          text-align: end;
+          color: #2d343b;
+        }
+
+        .value {
+          flex: auto;
+          display: flex;
+          flex-direction: row;
+          justify-content: space-between;
+          height: 0.3rem;
+          margin-left: 0.25rem;
+          line-height: 0.3rem;
+          color: #657281;
+        }
+      }
+
+      .bottomGroup {
+        display: flex;
+        margin-top: 0.15rem;
+        margin-left: 0.05rem;
+        align-items: center;
+
+        .auto {
+          flex: auto;
+        }
+
+        .number {
+          color: #657281;
+          font-size: 0.12rem;
+          margin-right: 0.1rem;
+        }
+
+        .price {
+          margin-left: 0.05rem;
+          color: #ff5000;
+        }
+      }
+    }
+
+    .statusCard {
+      background: rgba(101, 114, 129, 1);
+      border-radius: 0.1rem;
+
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+      justify-content: space-between;
+      height: 0.6rem;
+      margin-left: 0.15rem;
+      margin-right: 0.15rem;
+
+      .status {
+        margin-left: 0.18rem;
+        font-size: 0.16rem;
+        color: white;
+      }
+
+      .time {
+        margin-right: 0.18rem;
+        font-size: 0.14rem;
+        color: white;
+      }
+    }
+
+    .addressCard {
+      display: flex;
+      flex: none;
+      background: rgba(255, 255, 255, 1);
+      border-radius: 0.1rem;
+      padding-top: 0.15rem;
+      padding-bottom: 0.15rem;
+      margin-left: 0.15rem;
+      margin-right: 0.15rem;
+      margin-top: 0.1rem;
+      align-items: center;
+
+      .addressGroup {
+        display: flex;
+        flex-direction: column;
+        flex: auto;
+
+        .people {
+          margin-bottom: 0.05rem;
+          font-size: 0.15rem;
+          font-weight: bold;
+        }
+
+        .address {
+          margin-top: 0.05rem;
+          font-size: 0.14rem;
+        }
+      }
+    }
+
+    .timeCard {
+      display: flex;
+      flex-direction: column;
+      background: rgba(255, 255, 255, 1);
+      border-radius: 0.1rem;
+      margin-left: 0.15rem;
+      margin-right: 0.15rem;
+      margin-top: 0.1rem;
+      padding-top: 0.1rem;
+      padding-bottom: 0.1rem;
+
+      .timeGroup {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        margin: 0.08rem 0.2rem;
+      }
+    }
+  }
+
+  .bottomCard {
+    display: flex;
+    flex-direction: row;
+    background: white;
+    height: 0.3rem;
+    padding-top: 0.05rem;
+    padding-bottom: 0.05rem;
+    position: fixed;
+    width: 100%;
+    bottom: 0;
+
+    .auto {
+      flex: auto;
+    }
+
+    .priceGroup {
+      display: flex;
+      flex-direction: row;
+      color: #ff5000;
+      align-items: center;
+      font-size: 0.14rem;
+
+      .pricePrefix {
+        font-size: 0.12rem;
+      }
+    }
+
+    .pay {
+      flex: none;
+      margin-left: 0.15rem;
+      margin-right: 0.2rem;
+      padding: 0.08rem 0.15rem 0.08rem 0.15rem;
+      font-size: 0.12rem;
+      background: #ffb516;
+      border-radius: 0.16rem;
+      color: white;
+    }
+  }
+}
+
+.modalCard {
+  .am-modal-content {
+    border-top-left-radius: 0.1rem;
+    border-top-right-radius: 0.1rem;
+  }
+
+  .modalContent {
+    padding-top: 0.3rem;
+    font-family: PingFangSC-Medium;
+    color: #2d343b;
+
+    .title {
+      padding-bottom: 0.1rem;
+      font-size: 0.16rem;
+      line-height: 0.22rem;
+      color: rgba(45, 52, 59, 1);
+      font-weight: bold;
+      margin: 0 0.14rem;
+      border-bottom: 1px solid #f5f6f8;
+    }
+
+    .get-coupon {
+      padding: 0.16rem 0;
+      display: flex;
+      justify-content: space-between;
+      margin: 0 0.14rem;
+
+      input {
+        height: 0.32rem;
+        width: 2.8rem;
+        border-radius: 0.16rem;
+        background: #f5f6f8;
+        padding: 0 0.15rem;
+      }
+
+      span {
+        display: inline-block;
+        line-height: 0.32rem;
+        font-size: 0.16rem;
+      }
+    }
+
+    .coupon-item {
+      position: relative;
+      margin: 0 0.14rem .16rem;
+      width: 3.46rem;
+      height: 1.14rem;
+      padding: 0.2rem 0.33rem;
+      box-sizing: border-box;
+      display: flex;
+      align-items: center;
+
+      .coupon-bg-img {
+        position: absolute;
+        left: 0;
+        top: 0;
+        width: 3.4rem;
+        height: 1.14rem;
+      }
+
+      .content {
+        text-align: left;
+        margin: 0 0.06rem 0;
+        flex: 1;
+
+        .name {
+          height: 0.22rem;
+          line-height: 0.22rem;
+          font-size: 0.16rem;
+          font-weight: bold;
+          margin-bottom: 0.07rem;
+        }
+
+        .money {
+          line-height: 0.2rem;
+          font-size: 0.14rem;
+          margin-bottom: 0.03rem;
+        }
+
+        .time {
+          line-height: 0.2rem;
+          font-size: 0.14rem;
+          color: #657281;
+        }
+      }
+    }
+
+    .save-button {
+      height: 0.65rem;
+      padding-top: 0.1rem;
+      padding-left: 0.42rem;
+      box-sizing: border-box;
+      box-shadow: 0px -2px 8px 0px rgba(233, 239, 255, 0.8);
+
+      div {
+        width: 2.91rem;
+        height: 0.45rem;
+        background: rgba(255, 181, 22, 1);
+        border-radius: 0.23rem;
+        font-size: 0.16rem;
+        color: #fff;
+        line-height: 0.45rem;
+      }
+    }
+  }
+}

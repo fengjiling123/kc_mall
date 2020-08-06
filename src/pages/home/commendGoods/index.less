@@ -1,0 +1,60 @@
+.--home-commend-goods {
+  padding: 0 0.1rem;
+
+  .title {
+    padding: 0.1rem 0;
+    font-size: 0.16rem;
+    font-weight: bold;
+  }
+
+  .goods-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+
+    >div {
+      margin-bottom: 0.1rem;
+    }
+  }
+
+  .--home-commend-goods-item {
+    background: #fff;
+    width: 1.72rem;
+    border-radius: 0.05rem;
+    overflow: hidden;
+
+    .goods-cover {
+      display: flex;
+      align-items: center;
+      width: 1.68rem;
+      height: 1.68rem;
+      position: relative;
+
+      .act-img {
+        position: absolute;
+        top: 0;
+        right: 0;
+      }
+
+      img {
+        width: 100%;
+        max-height: 100%;
+      }
+    }
+
+    .goods-name {
+      line-height: 0.2rem;
+      margin: 0.08rem 0.1rem;
+      height: 0.4rem;
+      overflow: hidden;
+    }
+
+    >div:last-child {
+      margin: 0 0.08rem 0.08rem;
+      display: flex;
+      overflow: hidden;
+      justify-content: space-between;
+      align-items: flex-end;
+    }
+  }
+}

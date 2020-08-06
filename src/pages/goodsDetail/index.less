@@ -1,0 +1,437 @@
+.--goods-detail-component {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  position: relative;
+
+  .cart-number {
+    position: absolute;
+    height: 0.1rem;
+    padding: 0.03rem 0;
+    width: 0.2rem;
+    background: #ffb516;
+    border-radius: 0.1rem;
+    color: #fff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 0.1rem;
+  }
+
+  .cart-icon {
+    position: relative;
+
+    img {
+      width: 0.24rem;
+    }
+  }
+
+  .goods-detail-top-bar {
+    position: absolute;
+    width: 100%;
+    left: 0;
+    top: 0;
+    z-index: 2;
+
+    .cart-number {
+      right: -0.04rem;
+      top: -0.04rem;
+    }
+  }
+
+  .operation-icon {
+    position: absolute;
+    left: 0;
+    top: 0;
+    z-index: 2;
+    width: 100%;
+    padding: 0.1rem 0.15rem;
+    display: flex;
+    justify-content: space-between;
+    box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+
+    img {
+      width: 0.32rem;
+      height: 0.32rem;
+    }
+
+    .cart-number {
+      right: 0.09rem;
+      top: 0.07rem;
+    }
+  }
+
+  .scroll-view {
+    flex: 1;
+    overflow: auto;
+    -webkit-overflow-scrolling: touch;
+
+    .goods_banner {
+      position: relative;
+
+      .count_tag {
+        position: absolute;
+        display: flex;
+        align-items: center;
+        background: rgba(0, 0, 0, 0.5);
+        border-radius: 11px;
+        right: 0.16rem;
+        bottom: 0.12rem;
+        color: #ffffff;
+        height: 0.22rem;
+        padding: 0 0.1rem;
+      }
+
+      .banner-img-container {
+        height: 3.75rem !important;
+        background: #fff;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+
+        img {
+          max-width: 100%;
+          max-height: 100%;
+        }
+      }
+    }
+
+    .price-activity {
+      background: #fff;
+      padding: 0.11rem 0.16rem 0;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      height: 0.33rem;
+
+      .left {
+        display: flex;
+        align-items: center;
+      }
+
+      .tag {
+        margin-right: 0.1rem;
+        background: #ffb516;
+        border-radius: 10.5px;
+        color: #fff;
+        padding: 0.045rem 0.05rem;
+        font-size: 0.12rem;
+      }
+
+      .price {
+        color: #ff5000;
+        font-size: 0.16rem;
+        margin-right: 0.11rem;
+        font-weight: bold;
+
+        span {
+          font-size: 0.24rem;
+        }
+      }
+
+      .old-price {
+        font-size: 12px;
+        color: #657281;
+        text-decoration: line-through;
+      }
+
+      .tag-border {
+        border: 1px solid #ff5000;
+        border-radius: 8px;
+        font-size: 0.1rem;
+        color: #ff5000;
+        text-align: center;
+        padding: 0.02rem 0.05rem;
+        margin-left: 0.05rem;
+      }
+    }
+
+    .spike-activity {
+      padding: 0 0.15rem;
+      background: #fff;
+      height: 0.22rem;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+
+      .price {
+        font-size: 16px;
+        color: #657281;
+      }
+    }
+
+    .goods_name {
+      padding: 0.1rem 0.15rem;
+      background: #fff;
+      line-height: 0.22rem;
+      font-size: 0.16rem;
+      font-weight: bold;
+      // margin-bottom: 0.05rem;
+    }
+
+    //优惠券
+    .coupon {
+      padding: 0 0.15rem;
+      background: #fff;
+
+      height: 0.4rem;
+      display: flex;
+      justify-content: space-between;
+
+      >div:first-child {
+        flex: 1;
+        height: 100%;
+        line-height: 0.4rem;
+        display: flex;
+        align-items: center;
+        flex-wrap: wrap;
+        overflow: hidden;
+
+        >span {
+          display: inline-block;
+          height: 0.21rem;
+          margin: 0.095rem 0.15rem 0.095rem 0;
+          line-height: 0.21rem;
+          box-sizing: border-box;
+          -webkit-box-sizing: border-box;
+          font-size: 0.12rem;
+          padding: 0 0.07rem;
+          display: flex;
+          align-items: center;
+          color: #fff;
+        }
+      }
+
+      >div:last-child {
+        display: flex;
+        font-size: 12px;
+        color: #657281;
+        flex-shrink: 0;
+        align-items: center;
+        padding-left: 0.1rem;
+
+        img {
+          height: 0.12rem;
+          margin-left: 0.1rem;
+        }
+      }
+    }
+
+    //权益标签
+    .equity-tags {
+      padding: 0 0.15rem;
+      background: #fff;
+      height: 0.4rem;
+      line-height: 0.4rem;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+
+      img {
+        height: 0.1rem;
+        margin-left: 0.1rem;
+      }
+
+      div {
+        height: 0.4rem;
+        line-height: 0.4rem;
+        font-size: 0.13rem;
+
+        span::after {
+          content: "";
+          display: inline-block;
+          width: 3px;
+          height: 3px;
+          border-radius: 50%;
+          background: #657281;
+          margin: 0 7px 3px;
+        }
+
+        span:first-child {
+          color: #a1adb9;
+          margin-right: 0.16rem;
+        }
+
+        span:first-child::after {
+          display: none;
+        }
+
+        span:last-child::after {
+          background: #fff;
+        }
+      }
+    }
+
+    //商品简介
+    .goods-description {
+      display: flex;
+      height: 0.4rem;
+      line-height: 0.4rem;
+      background: #fff;
+      padding: 0 0.15rem;
+
+      .label {
+        flex-shrink: 0;
+        font-weight: bold;
+        margin-right: 0.08rem;
+      }
+    }
+
+    //商品详情
+    .goods-detail {
+      .title {
+        padding: 0.2rem 0.15rem;
+        text-align: center;
+        line-height: 0.2rem;
+        color: #657281;
+
+        span::after {
+          content: "";
+          width: 0.1rem;
+          border-top: 1px solid #657281;
+          display: inline-block;
+          margin-bottom: 0.05rem;
+          margin-left: 0.08rem;
+        }
+
+        span::before {
+          content: "";
+          width: 0.1rem;
+          border-top: 1px solid #657281;
+          display: inline-block;
+          margin-bottom: 0.05rem;
+          margin-right: 0.08rem;
+        }
+      }
+
+      .content {
+        background: #fff;
+        padding: 0.15rem;
+        line-height: 0.2rem;
+        word-break: break-all;
+
+        * {
+          max-width: 100%;
+        }
+      }
+    }
+  }
+
+  // 价格说明
+  .price-introduction {
+    padding: 0 0.15rem 0.15rem;
+    background: #fff;
+    line-height: 0.21rem;
+
+    .conetnt {
+      margin-bottom: 0.2rem;
+      color: #001600;
+      padding-left: 0.12rem;
+      position: relative;
+
+      &::before {
+        content: "";
+        display: inline-block;
+        width: 6px;
+        height: 6px;
+        background: #ffb516;
+        border-radius: 100%;
+        position: absolute;
+        left: 0;
+        top: 4px;
+      }
+    }
+
+    .title {
+      font-size: 13px;
+      color: #2d343b;
+      font-weight: bold;
+    }
+  }
+
+  .opeartion-footer {
+    height: 0.5rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: #fff;
+    border-top: 1px solid #f5f6f8;
+    padding: 0 0.15rem;
+
+    >div {
+      display: flex;
+      align-items: center;
+      font-size: 0.12rem;
+      color: #657281;
+    }
+
+    img {
+      height: 0.2rem;
+      margin-right: 0.05rem;
+    }
+
+    .member-icon {
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      font-size: 0.08rem;
+
+      img {
+        margin-bottom: 0.07rem;
+        margin-right: 0;
+        height: 0.17rem;
+      }
+    }
+
+    .buttons {
+      border-radius: 0.17rem;
+      overflow: hidden;
+
+      >div {
+        width: 1.05rem;
+        height: 0.34rem;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        color: #ffffff;
+        font-size: 0.14rem;
+      }
+    }
+
+    .member-buttons {
+      border-radius: 0.17rem;
+      overflow: hidden;
+
+      >div {
+        width: 1.05rem;
+        height: 0.34rem;
+        color: #ffffff;
+        text-align: center;
+
+        &:first-child {
+          background: #ffb516;
+
+          &.disabled {
+            background: #a1adb9;
+          }
+        }
+
+        &:last-child {
+          background: #ff8816;
+        }
+
+        >div:first-child {
+          font-size: 0.14rem;
+          padding: 0.03rem;
+        }
+
+        >div:last-child {
+          font-size: 0.1rem;
+          padding: 0.02rem;
+        }
+      }
+    }
+  }
+
+}

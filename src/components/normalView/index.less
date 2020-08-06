@@ -1,0 +1,239 @@
+.normalView {
+ 
+
+  .view1 {
+    overflow: hidden;
+    box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+  }
+
+  .view2 {
+    display: flex;
+    flex-direction: row;
+    overflow: hidden;
+    box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+  }
+
+  .view3 {
+    display: flex;
+    flex-direction: row;
+    overflow: hidden;
+    box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+  }
+
+  .view4 {
+    display: flex;
+    flex-direction: row;
+    overflow: hidden;
+    box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+  }
+
+  .view5 {
+    display: flex;
+    flex-direction: row;
+    overflow: hidden;
+    box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+
+    .nextView {
+    }
+  }
+
+  .cardGroup2 {
+    flex: none;
+    display: flex;
+    flex-wrap: wrap;
+    padding-left: 0.08rem;
+    padding-right: 0.08rem;
+    justify-content: space-between;
+
+    .card2 {
+      width: 49%;
+      margin-top: 0.1rem;
+
+      .goodsImg {
+        width: 100%;
+        height: 0;
+        padding-bottom: 100%;
+        position: relative;
+        border-radius: 0.06rem 0.06rem 0 0;
+        overflow: hidden;
+        position: relative;
+
+        .act-img {
+          position: absolute;
+          top: 0;
+          right: 0;
+          z-index: 2;
+        }
+      }
+
+      .goodsContent {
+        background: white;
+        border-radius: 0 0 0.06rem 0.06rem;
+        display: flex;
+        position: relative;
+        padding-bottom: 0.6rem;
+
+        .content {
+          display: flex;
+          flex-direction: column;
+          width: 100%;
+          height: 100%;
+          position: absolute;
+          justify-content: space-between;
+
+          .goodsName {
+            flex: none;
+            overflow: hidden;
+            height: 0.3rem;
+            line-height: 0.16rem;
+            margin-top: 0.03rem;
+            margin-left: 0.1rem;
+            margin-right: 0.1rem;
+            font-size: 12px;
+          }
+
+          .goodsPrice {
+            flex: none;
+            margin-left: 0.1rem;
+            margin-bottom: 0.05rem;
+            display: flex;
+            flex-direction: row;
+            align-items: flex-end;
+
+            .prefix {
+              font-size: 10px;
+              margin-bottom: 0.01rem;
+              color: #ff5000;
+            }
+
+            .value {
+              font-size: 16px;
+              color: #ff5000;
+            }
+
+            .empty {
+              flex: auto;
+            }
+
+            .count {
+              font-size: 12px;
+              color: #657281;
+              margin-right: 0.03rem;
+            }
+          }
+        }
+      }
+    }
+  }
+
+  .cardGroup3 {
+    flex: none;
+    padding-left: 0.08rem;
+    padding-right: 0.08rem;
+    display: flex;
+    flex-wrap: wrap;
+
+    .card3 {
+      margin-top: 0.15rem;
+      width: 32%;
+      margin-left: 0.666%;
+      margin-right: 0.666%;
+
+      .goodsImg {
+        width: 100%;
+        height: 0;
+        padding-bottom: 100%;
+        position: relative;
+        border-radius: 0.04rem 0.04rem 0 0;
+        overflow: hidden;
+        position: relative;
+
+        .act-img {
+          position: absolute;
+          top: 0;
+          right: 0;
+          z-index: 2;
+        }
+      }
+
+      .goodsContent {
+        background: white;
+        border-radius: 0 0 0.04rem 0.04rem;
+        display: flex;
+        position: relative;
+        padding-bottom: 0.7rem;
+
+        .content {
+          display: flex;
+          flex-direction: column;
+          width: 100%;
+          height: 100%;
+          position: absolute;
+          justify-content: space-between;
+
+          .goodsName {
+            flex: none;
+            overflow: hidden;
+            height: 12px;
+            line-height: 13px;
+            margin-top: 0.05rem;
+            margin-left: 0.1rem;
+            margin-right: 0.1rem;
+            font-size: 12px;
+          }
+
+          .goodsBuy {
+            display: flex;
+            flex-direction: row;
+            margin-left: 0.1rem;
+
+            .text {
+              //font-family: sans-serif;
+              display: inline-block;
+              height: 0.14rem;
+              line-height: 0.14rem;
+              box-sizing: border-box;
+              color: #ff5000;
+              border: 0.01rem solid #ff5000;
+              font-size: 10px;
+              padding: 0 0.05rem 0;
+              align-items: center;
+            }
+          }
+
+          .goodsPrice {
+            flex: none;
+            margin-left: 0.1rem;
+            margin-bottom: 0.05rem;
+            font-size: 12px;
+            color: #ff5000;
+
+            display: flex;
+            flex-direction: row;
+            align-items: flex-end;
+
+            .prefix {
+              font-size: 10px;
+              margin-bottom: 0.02rem;
+            }
+
+            .value {
+              font-size: 16px;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+.fullScreen {
+  height: 100%;
+  width: 100%;
+  overflow: scroll;
+}

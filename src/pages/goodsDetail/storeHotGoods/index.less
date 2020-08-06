@@ -1,0 +1,81 @@
+//本店热销
+.--hot-goods {
+  margin: 0.05rem 0;
+  padding: 0 0.15rem;
+  background: #fff;
+  .title {
+    display: flex;
+    padding: 0.1rem 0;
+    border-bottom: 1px solid #f5f6f8;
+    align-items: center;
+    .store-name {
+      display: flex;
+      align-items: center;
+      flex: 1;
+
+      img {
+        height: 0.4rem;
+        width: 0.4rem;
+        border-radius: 50%;
+        margin-right: 0.05rem;
+        flex-shrink: 0;
+      }
+      span {
+        font-weight: bold;
+        line-height: 0.4rem;
+        height: 0.4rem;
+      }
+    }
+    .button {
+      margin-left: 0.15rem;
+      // background: #3776ec;
+      background: linear-gradient(90deg,rgba(255,181,22,1) 0%,rgba(255,136,22,1) 100%);
+      border-radius: .12rem;
+      font-size: .12rem;
+      color: #ffffff;
+      padding: 0.06rem 0;
+      width: .64rem;
+      text-align: center;
+      flex-shrink: 0;
+    }
+  }
+  .hot-goods-list {
+    display: flex;
+    padding-bottom: 0.1rem;
+    > div {
+      width: 1.07rem;
+      margin-right: 0.12rem;
+
+      .goods-cover {
+        height: 1.07rem;
+        width: 1.07rem;
+        border-radius: 0.05rem;
+        margin-bottom: 0.08rem;
+        display: flex;
+        align-items: center;
+        overflow: hidden;
+        img {
+          width: 100%;
+          max-height: 100%;
+        }
+      }
+      .goods-name {
+        height: 0.4rem;
+        line-height: 0.2rem;
+      }
+      .price {
+        color: #FF5000 ;
+        height: 0.22rem;
+        line-height: 0.22rem;
+        margin-top: 0.05rem;
+        
+        span {
+          font-size: 0.16rem;
+        }
+      }
+      &:last-child {
+        margin-right: 0;
+      }
+    }
+  }
+}

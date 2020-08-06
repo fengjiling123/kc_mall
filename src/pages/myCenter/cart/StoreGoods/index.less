@@ -1,0 +1,149 @@
+.cardParent {
+  display: flex;
+  flex-direction: column;
+  background: #f5f6f8;
+
+  .orderCard {
+    display: flex;
+    flex-direction: column;
+    background: #ffffff;
+    border-radius: 0.1rem;
+    margin: 0rem 0.1rem 0.1rem 0.1rem;
+    padding: 0.15rem 0.15rem 0.15rem 0.15rem;
+    font-size: 0.14rem;
+
+    .storeGroup {
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
+
+      .store {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        width: 100%;
+
+        .storeName {
+          margin-left: 0.1rem;
+          margin-right: 0.05rem;
+        }
+      }
+
+      .storeStatus {}
+    }
+
+    .drugGroup {
+      display: flex;
+      flex-direction: row;
+      margin-top: 0.1rem;
+
+      .storeImageGroup {
+        display: flex;
+        flex: none;
+        position: relative;
+        width: 0.8rem;
+        height: 0.8rem;
+
+        .expireText {
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          background: #000;
+          position: absolute;
+          opacity: 0.7;
+          left: 0.1rem;
+          top: 0.1rem;
+          width: 0.6rem;
+          height: 0.6rem;
+          border-radius: 1rem;
+          flex: none;
+          color: #fff;
+          font-size: 0.14rem;
+        }
+
+        .specification-invalid {
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          background: #000;
+          position: absolute;
+          opacity: 0.7;
+          left: 0;
+          bottom: 0;
+          width: 0.8rem;
+          height: 0.2rem;
+          flex: none;
+          color: #fff;
+          font-size: 0.1rem;
+          border-radius: 0 0 5px 5px;
+        }
+      }
+
+      .drugContent {
+        display: flex;
+        flex: auto;
+        flex-direction: column;
+        justify-content: space-between;
+        margin-left: 0.1rem;
+        margin-top: 0.03rem;
+
+        .drugName {
+          color: #2d343b;
+        }
+
+        .drugName.expire {
+          color: #657281;
+        }
+
+        .drug-spec {
+          display: inline-block;
+          margin-bottom: 0.01rem;
+          font-size: 0.12rem;
+          color: #657281;
+          padding: 0.04rem 0.06rem;
+          background: #F5F6F8;
+          border-radius: 10px;
+        }
+
+        .amountGroup {
+          display: flex;
+          flex-direction: row;
+          justify-content: space-between;
+
+          .stepper {
+            padding-left: 0.03rem;
+            padding-right: 0.03rem;
+            border-radius: 5px;
+            border: 0.01rem solid rgba(161, 173, 185, 1);
+          }
+
+          .am-icon-xxs {
+            width: 0.12rem;
+            height: 0.12rem;
+          }
+
+          .am-stepper-handler {
+            border: 0 !important;
+            width: 0.16rem !important;
+            height: 0.16rem !important;
+            line-height: 0.16rem !important;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+          }
+
+          .am-stepper-input-wrap {
+            height: 0.14rem !important;
+            line-height: 0.14rem !important;
+          }
+
+          .am-stepper-input {
+            height: 0.14rem !important;
+            line-height: 0.14rem !important;
+            font-size: 0.12rem;
+          }
+        }
+      }
+    }
+  }
+}

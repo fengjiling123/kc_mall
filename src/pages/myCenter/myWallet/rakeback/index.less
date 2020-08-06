@@ -1,0 +1,83 @@
+.--rake-back {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  .scroll-view {
+    flex: 1;
+    overflow: auto;
+    .rake-back-info {
+      background: #fff;
+      height: 1.3rem;
+      text-align: center;
+      .name {
+        font-size: 0.14rem;
+        padding-top: 0.2rem;
+        line-height: 0.2rem;
+        height: .2rem;
+      }
+      .money {
+        line-height: 0.45rem;
+        font-size: 0.24rem;
+        margin: 0.03rem 0;
+      }
+      .type {
+        color: #a1adb9;
+        font-size: 0.15rem;
+        line-height: 0.21rem;
+      }
+    }
+    .rake-back-goods {
+      margin: 0.1rem 0;
+      background: #fff;
+      padding: 0.15rem;
+      .title {
+        font-size: 0.16rem;
+        line-height: 0.22rem;
+        padding: 0.08rem 0;
+        border-bottom: 1px solid #f5f6f8;
+        font-weight: bold;
+      }
+      .store-name {
+        margin-top: 0.1rem;
+      }
+      .goods-item {
+        margin-top: 0.1rem;
+        display: flex;
+        .goods-cover {
+          width: 0.8rem;
+          height: 0.8rem;
+          border-radius: 0.05rem;
+          overflow: hidden;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          flex-shrink: 0;
+          margin-right: 0.1rem;
+          img {
+            max-width: 100%;
+            max-width: 100%;
+          }
+        }
+        .goods-info {
+          display: flex;
+          flex-direction: column;
+          justify-content: space-between;
+          flex: 1;
+        }
+        .goods-name {
+          line-height: 0.2rem;
+        }
+      }
+    }
+    .order-info {
+      background: #fff;
+      padding: 0.15rem;
+      > div {
+        line-height: 0.2rem;
+        &:first-child {
+          margin-bottom: 0.1rem;
+        }
+      }
+    }
+  }
+}

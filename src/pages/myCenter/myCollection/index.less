@@ -1,0 +1,140 @@
+.myCollection {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: 100%;
+    .topBar {
+        height: 44px;
+        width: 100%;
+    }
+    .content {
+        flex: 1;
+        background: #fff;
+       .bottomView {
+          border:1px solid #F5F6F8;
+          background-color: #fff;
+         display: flex;
+         justify-content: space-between;
+         align-items: center;
+         height: 0.5rem;
+         position: absolute;
+         bottom: 0.0rem;
+         width: 100%;
+         .bottom-left {
+          display: flex;
+          align-items: center;
+          margin-left: 0.15rem;
+          color: #657281;
+           .selectImg {
+            width: 0.12rem;
+            height: 0.12rem;
+            margin-right: 0.08rem;
+           }
+         }
+         .cancelBtn {
+           color: #FFB516;
+           border:1px solid #FFB516;
+           height: 0.3rem;
+           width: 0.8rem;
+           line-height: 0.3rem;
+           border-radius: 0.15rem;
+           text-align: center;
+           margin-right: 0.15rem;
+         }
+       }
+    }
+    .am-list-view-scrollview {
+        margin: 0 !important;
+      }
+    
+      .am-list-body:before {
+        content: "" !important;
+        background-color: #fff !important;
+      }
+    
+      .am-list-body:after {
+        content: "" !important;
+        background-color: #fff !important;
+      }
+
+    
+}
+
+.collection-item {
+  padding: 0.15rem 0.15rem;
+  .itemContent {
+    display: flex;
+    align-items: center;
+    .selectImg {
+      width: 0.12rem;
+      height: 0.12rem;
+      margin-right: 0.08rem;
+    }
+    .rightContent {
+      display: flex;
+      position: relative;
+      .cover {
+        height: 1.07rem;
+        width: 1.07rem;
+        flex-shrink: 0;
+        margin-right: 0.08rem;
+        font-size: 0;
+        display: flex;
+        align-items: center;
+        border: 1px solid #A1ADB9;
+        border-radius: 0.05rem;
+    img {
+      width: 100%;
+      max-height: 100%;
+      border-radius: 5px;
+    }
+  }
+  .goods-name {
+    line-height: 0.2rem;
+    height: 0.4rem;
+  }
+  .textContent {
+    display: flex;
+    flex-direction: column;
+    justify-content:space-between;
+  }
+  .tags {
+    margin: 0.03rem 0;
+    font-size: 0.1rem;
+    color: #FF5000;
+    height: 0.18rem;
+    .tag {
+      display: inline-block;
+      border: 1px solid #FF5000;
+      border-radius: 8px;
+      padding: 0.02rem 0.05rem;
+      margin-right: 0.05rem;
+    }
+  }
+  .price-count {
+    line-height: 0.22rem;
+    .price {
+      color: #FF5000;
+      margin-right: 0.1rem;
+      span {
+        font-size: 0.16rem;
+      }
+    }
+    .count {
+      color: #657281;
+      font-size: 0.12rem;
+    }
+  }
+  .xiajia {
+    height: 0.2rem;
+    width: 0.5rem;
+    line-height: 0.2rem;
+    text-align: center;
+    color: #fff;
+    background: #A1ADB9;
+    border-radius: 0.1rem;
+  }
+    }
+  }
+}
+

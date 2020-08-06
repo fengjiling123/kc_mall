@@ -1,0 +1,297 @@
+.myCenter {
+  background: #fff;
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  overflow: scroll;
+
+  .infoOrder {
+    flex: none;
+    .header {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      height: 0.4rem;
+      font-size: 16px;
+      color: #fff;
+      .backImg {
+        width: 0.1rem;
+      }
+    }
+    .info {
+      display: flex;
+      padding-left: 25px;
+      padding-top: 25px;
+      height: 120px;
+
+      .headerImg {
+        width: 0.7rem;
+        height: 0.7rem;
+        border-radius: 0.35rem;
+      }
+      .rightView {
+        width: 2.4rem;
+        margin-left: 0.2rem;
+        .collect {
+          display: flex;
+          // padding-left: 0.3rem;
+          // padding-right: 0.3rem;
+          margin: 0rem 0.3rem 0.2rem 0.3rem;
+          justify-content: space-between;
+        }
+        .userInfoBtn {
+          color: #fff;
+          border: 1px solid #ffffff;
+          border-radius: 0.15rem;
+          height: 0.3rem;
+          text-align: center;
+          line-height: 0.3rem;
+        }
+      }
+    }
+    .userVip {
+      flex: none;
+      margin-top: -0.1rem;
+      border-radius: 0.1rem 0.1rem 0 0;
+      padding-top: 0.15rem;
+      padding-left: 0.15rem;
+      padding-right: 0.15rem;
+      background: white;
+      .group {
+        position: relative;
+        overflow: hidden;
+        .userVipGroup {
+          top: 0;
+          width: 100%;
+          height: 100%;
+          position: absolute;
+
+          display: flex;
+          flex-direction: row;
+          align-items: center;
+          .text {
+            flex: auto;
+            margin-left: 0.15rem;
+            .label1 {
+              color: #2d343b;
+              font-size: 13px;
+              font-weight: bold;
+            }
+            .label2 {
+              margin-top: 0.05rem;
+              color: #2d343b;
+              font-size: 11px;
+            }
+          }
+          .textRight {
+            flex: none;
+            display: flex;
+            align-items: center;
+            margin-right: 0.15rem;
+            .label {
+              margin-right: 0.1rem;
+              color: #2d343b;
+              font-size: 12px;
+            }
+          }
+        }
+      }
+    }
+    .allOrder {
+      flex: none;
+      margin-top: 0.1rem;
+      background: white;
+      display: flex;
+      flex-direction: row;
+      height: 0.4rem;
+      line-height: 0.4rem;
+      align-items: center;
+      .text {
+        margin-left: 0.15rem;
+        font-weight: bold;
+      }
+      .auto {
+        flex: auto;
+      }
+      .value {
+        color: #657281;
+        margin-right: 0.1rem;
+        font-size: 12px;
+      }
+    }
+    .order {
+      display: flex;
+      width: 100%;
+      height: 85px;
+      .orderItem {
+        margin-top: 20px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        flex: 1;
+        position: relative;
+        .badge {
+          font-size: 0.1rem;
+          padding-left: 0.03rem;
+          padding-right: 0.03rem;
+          height: 0.12rem;
+          line-height: 0.12rem;
+          box-sizing: border-box;
+          -webkit-box-sizing:border-box;
+          position: absolute;
+          background-color: #ffb516;
+          color: #fff;
+          top: -0.05rem;
+          right: 0.24rem;
+          border-radius: 0.07rem;
+        }
+        .orderTitle {
+          margin-top: 0.07rem;
+          color: #2d343b;
+          font-size: 0.14rem;
+        }
+      }
+    }
+  }
+  .lineView {
+    flex: none;
+    height: 0.06rem;
+    width: 100%;
+    background: #f5f6f8;
+  }
+  .listView {
+    flex: none;
+    .listItem {
+      flex: none;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      height: 54px;
+      padding: 0px 20px;
+      .goImg {
+        width: 7px;
+        height: 10px;
+      }
+      .numTag {
+        color: #fff;
+        background: #ffb516;
+        font-size: 12px;
+        padding: 0px 4px;
+        height: 19px;
+        line-height: 19px;
+        border-radius: 9.5px;
+        margin-right: 10px;
+      }
+    }
+    .itemLineView {
+      height: 1px;
+      background: #f5f6f8;
+      margin: 0px 4px;
+    }
+  }
+
+  .topBg {
+    height: 1.97rem;
+    background: -webkit-linear-gradient(
+      left,
+      #4b7edb,
+      #8755ef
+    ); /* Safari 5.1 - 6.0 */
+    background: -o-linear-gradient(
+      right,
+      #4b7edb,
+      #8755ef
+    ); /* Opera 11.1 - 12.0 */
+    background: -moz-linear-gradient(
+      right,
+      #4b7edb,
+      #8755ef
+    ); /* Firefox 3.6 - 15 */
+    background: linear-gradient(to right, #4b7edb, #8755ef); /* 标准的语法 */
+    padding: 0.1rem 0.1rem;
+    box-sizing: border-box;
+    -webkit-box-sizing:border-box;
+    display: flex;
+    flex-direction: column;
+
+    .backImg {
+      width: 10px;
+      height: 18px;
+    }
+    .userInfo {
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+      margin-top: 0.3rem;
+      margin-left: 0.3rem;
+      height: 0.5rem;
+      .name {
+        color: white;
+        font-size: 0.18rem;
+        margin-left: 0.15rem;
+        line-height: 0.3rem;
+        word-break: break-all;
+        max-width: 1.6rem;
+      }
+      .label {
+        color: white;
+        flex-shrink: 0;
+        font-size: 12px;
+        margin-left: 0.15rem;
+        box-sizing: border-box;
+        -webkit-box-sizing:border-box;
+        height: 18px;
+        line-height: 18px;
+        padding-left: 0.05rem;
+        padding-right: 0.05rem;
+        background: #ffb516;
+      }
+    }
+
+    .userCollect {
+      display: flex;
+      flex-direction: row;
+      width: 100%;
+      height: auto;
+      flex: auto;
+      align-items: flex-end;
+      margin-bottom: 0.2rem;
+
+      .numberTag {
+        display: flex;
+        flex: auto;
+        flex-direction: column;
+        align-items: center;
+        color: white;
+        .number {
+          font-size: 18px;
+          margin-bottom: 6px;
+        }
+        .name {
+          font-size: 14px;
+        }
+      }
+    }
+
+    .info {
+      height: auto;
+      padding-top: 0.1rem;
+      padding-left: 0.1rem;
+      color: #fff;
+      .rightView {
+        flex: 1;
+      }
+      img {
+        height: 0.1rem;
+      }
+    }
+    .collect {
+      margin: 0 !important;
+      margin-top: 0.1rem !important;
+      justify-content: flex-start !important;
+      > div:last-child {
+        margin-left: 1.3rem;
+      }
+    }
+  }
+}

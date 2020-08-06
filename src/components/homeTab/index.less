@@ -1,0 +1,45 @@
+.--homeTab {
+  .homeNav {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    height: 0.5rem;
+    flex: none;
+    background: white;
+    .navGroup {
+      display: flex;
+      flex-direction: column;
+      flex: auto;
+      align-items: center;
+      justify-content: center;
+      height: 0.49rem;
+
+      border-color: rgb(245, 246, 248);
+      border-top-style: solid;
+      border-width: 0.01rem;
+
+      .name {
+        font-size:.1rem;
+        color: #657281;
+      }
+      .name.active {
+        color: #3776ec;
+      }
+
+      .cart-number {
+        position: absolute;
+        height: 0.15rem;
+        width: 0.21rem;
+        background: #ffb516;
+        border-radius: 0.1rem;
+        color: #fff;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        font-size: 0.1rem;
+        right: -0.04rem;
+        top: 0rem;
+      }
+    }
+  }
+}

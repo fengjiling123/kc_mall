@@ -1,0 +1,146 @@
+.--store-detail-page {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  .store-conetnt {
+    flex: 1;
+    overflow: auto;
+  }
+  .store-name {
+    display: flex;
+    align-items: center;
+    background: #fff;
+    border-radius: 0.1rem;
+    padding: 0.16rem;
+    .logo {
+      width: 0.56rem;
+      height: 0.56rem;
+      border-radius: 0.05rem;
+      background: #a1adb9;
+      margin-right: 0.08rem;
+      flex-shrink: 0;
+    }
+    > div {
+      flex: 1;
+      .name {
+        font-size: 0.18rem;
+        line-height: 0.25rem;
+        font-weight: bold;
+      }
+      .is-self {
+        margin-top: 0.06rem;
+        width: 0.32rem;
+        height: 0.16rem;
+        line-height: 0.16rem;
+        text-align: center;
+        color: #fff;
+        border-radius: 0.08rem;
+        background: #ffb516;
+        font-size: 0.1rem;
+      }
+    }
+    .erweima-img {
+      width: 0.24rem;
+      height: 0.24rem;
+    }
+  }
+
+  .store-detail {
+    background: #fff;
+    border-radius: 0.1rem;
+    margin: 0.1rem 0;
+    padding: 0 0.16rem;
+    > div {
+      display: flex;
+      padding: 0.14rem 0;
+      color: #a1adb9;
+      font-size: 0.14rem;
+      line-height: 0.2rem;
+      &:first-child {
+        border-bottom: 1px solid #efefef;
+      }
+      .label {
+        color: #2d343b;
+        width: 0.73rem;
+        flex-shrink: 0;
+      }
+    }
+  }
+
+  .qualifications {
+    padding: 0 0.12rem;
+    background: #fff;
+    .title {
+      padding: 0.14rem 0;
+    }
+    .content {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-between;
+      .qualification-item {
+        width: 1.6rem;
+        height: 1.2rem;
+        margin-bottom: 0.1rem;
+      }
+    }
+  }
+
+  .erweima-modal {
+    position: absolute;
+    z-index: 99;
+    left: 0;
+    top: 0;
+    height: 100%;
+    width: 100%;
+
+    .mask {
+      background: rgba(0, 0, 0, 0.7);
+      position: absolute;
+      width: 100%;
+      height: 100%;
+      left: 0;
+      top: 0;
+      z-index: 1;
+    }
+
+    .content {
+      display: flex;
+      align-items: center;
+      flex-direction: column;
+      position: relative;
+      z-index: 2;
+      background: #fff;
+      width: 2.8rem;
+      height: 3rem;
+      border-radius: 0.1rem;
+      background: #fff;
+      margin: 1.7rem auto;
+      padding-top: 20px;
+      box-sizing: border-box;
+      .modal-store-name {
+        color: #2d343b;
+        font-size: 0.16rem;
+        line-height: 0.22rem;
+        font-weight: bold;
+        padding: 0 0.15rem;
+        box-sizing: border-box;
+        white-space: nowrap;
+        overflow: hidden;
+        text-overflow: ellipsis;
+        width: 2.8rem;
+        text-align: center;
+      }
+      .share {
+        margin: 0.06rem 0 0.2rem;
+        font-size: 0.12rem;
+        color: #2d343b;
+      }
+      .close-icon {
+        position: absolute;
+        height: 0.43rem;
+        top: -0.4rem;
+        right: 0.05rem;
+      }
+    }
+  }
+}

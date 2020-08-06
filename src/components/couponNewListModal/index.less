@@ -1,0 +1,80 @@
+.--coupon-new-list-modal {
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  top: 0;
+  left: 0;
+  .mask{
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    top: 0;
+    left: 0;
+    background: rgba(0, 0, 0, 0.7);
+  }
+  .content {
+    width: 2.51rem;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    .bg-1 {
+      width: 2.51rem;
+      z-index: 1;
+    }
+    .bg-2 {
+      position: absolute;
+      left: 0;
+      bottom: -.05rem;
+      width: 2.51rem;
+      z-index: 2;
+    }
+    .chakan {
+      position: absolute;
+      height: 0.14rem;
+      left: 0.58rem;
+      bottom: 0.26rem;
+      z-index: 3;
+    }
+    .close {
+      position: absolute;
+      width: 0.3rem;
+      right: 0;
+      top: 0.06rem;
+      z-index: 2;
+    }
+    .coupons {
+      position: absolute;
+      width: 2.03rem;
+      height: 2rem;
+      z-index: 1;
+      left: 0.24rem;
+      top: 0.9rem;
+      overflow: auto;
+      padding-bottom: .2rem;
+       -webkit-overflow-scrolling: touch;
+      .coupon-item {
+        background: url('../../assets/images/bg-baiquan.png');
+        background-size: cover;
+        width: 2.03rem;
+        height: 0.76rem;
+        margin-bottom: 0.1rem;
+        display: flex;
+        .price{
+          width: .7rem;
+          color: #FF8D16;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          margin-left: .04rem;
+        }
+        .info{
+          display: flex;
+          justify-content: center;
+          flex-direction: column;
+          margin-left: .12rem;
+        }
+      }
+    }
+  }
+}

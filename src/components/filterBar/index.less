@@ -1,0 +1,37 @@
+.--filter-bar-component{
+  height: 0.2rem;
+  padding: 0.1rem 0.16rem;
+  background: #fff;
+  display: flex;
+  position: relative;
+  z-index: 2;
+  .commend,
+  .price {
+    display: flex;
+    align-items: center;
+    height: 0.2rem;
+    line-height: 0.2rem;
+  }
+  img {
+    width: 0.1rem;
+  }
+
+  .commend-select {
+    position: absolute;
+    height: 1rem;
+    width: 100%;
+    background: #fff;
+    left: 0;
+    top: 0.41rem;
+    padding: 0 0.2rem;
+    box-sizing: border-box;
+    -webkit-box-sizing:border-box;
+    > div {
+      line-height: 0.5rem;
+      text-align: center;
+      &:first-child {
+        border-bottom: 1px solid #f5f6f8;
+      }
+    }
+  }
+}

@@ -1,0 +1,75 @@
+.--myVipInvite {
+  background: #f5f6f8;
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  overflow: hidden;
+
+  .count {
+    color: #2d343b;
+    font-size: 0.14rem;
+    font-weight: bold;
+    margin-left: 0.1rem;
+    margin-top: 0.15rem;
+    flex: none;
+  }
+  .list {
+    border-radius: 0.05rem;
+    background: white;
+    overflow: scroll;
+    margin: 0.1rem 0.1rem 1rem;
+
+    .item {
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+      height: 0.6rem;
+      line-height: 0.6rem;
+      border-bottom: 1px solid #f5f6f8;
+      .name {
+        flex: auto;
+        color: #2d343b;
+        font-weight: bold;
+        margin-left: 0.1rem;
+        font-size: 0.14rem;
+      }
+      .money {
+        color: #657281;
+        font-size: 0.12rem;
+        margin-right: 0.1rem;
+      }
+    }
+  }
+  .tips {
+    color: #a1adb9;
+    font-size: 0.14rem;
+    margin-top: 0.4rem;
+    text-align: center;
+  }
+
+  .activeButton {
+    position: absolute;
+    bottom: 0.3rem;
+    width: 80%;
+
+    height: 0.4rem;
+    line-height: 0.4rem;
+    color: white;
+    background: rgba(161, 173, 185, 1);
+    border-radius: 0.23rem;
+    margin-left: 0.4rem;
+    margin-right: 0.4rem;
+    text-align: center;
+  }
+
+  .activeButton.active {
+    height: 0.4rem;
+    line-height: 0.4rem;
+    color: white;
+    background: rgba(55, 118, 236, 1);
+    border-radius: 0.23rem;
+    margin-left: 0.4rem;
+    margin-right: 0.4rem;
+    text-align: center;
+  }
+}

@@ -1,0 +1,124 @@
+.--orderRefundListPage {
+  display: flex;
+  flex-direction: column;
+  background: #f5f6f8;
+  height: 100vh;
+
+  .cardParent {
+    display: flex;
+    flex-direction: column;
+    background: #f5f6f8;
+  }
+
+  .orderCard {
+    display: flex;
+    flex-direction: column;
+    background: #ffffff;
+    border-radius: 0.1rem;
+    margin: 0rem 0.1rem 0.1rem 0.1rem;
+    padding: 0.15rem 0.15rem 0.15rem 0.15rem;
+    font-size: 0.14rem;
+
+    .storeGroup {
+      width: 100%;
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
+
+      .store {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+
+        .storeName {
+          margin-right: 0.05rem;
+        }
+      }
+
+      .storeStatus {
+        color: #ffb516;
+      }
+    }
+
+    .refundGroup {
+      display: flex;
+      flex-direction: column;
+
+      .drugGroup {
+        display: flex;
+        flex-direction: row;
+        margin-top: 0.1rem;
+
+        .drugContent {
+          display: flex;
+          flex: auto;
+          flex-direction: column;
+          justify-content: space-between;
+          margin-left: 0.1rem;
+          margin-top: 0.03rem;
+
+          .drug-spec {
+            font-size: 0.12rem;
+            color: #657281;
+            padding: 0.04rem 0.06rem;
+            background: #F5F6F8;
+            border-radius: 10px;
+          }
+
+          .amountGroup {
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+
+            .priceGroup {
+              display: flex;
+              flex-direction: row;
+              color: #ff5000;
+              align-items: flex-end;
+
+              .pricePrefix {
+                font-size: 0.12rem;
+                margin-bottom: 0.01rem;
+              }
+            }
+          }
+        }
+      }
+
+      .line {
+        background: #f5f6f8;
+        width: 100%;
+        height: 1px;
+        margin-top: 0.1rem;
+        margin-bottom: 0.1rem;
+      }
+
+      .refundBottom {
+        display: flex;
+        font-size: 14px;
+        justify-content: space-between;
+
+        .status {}
+
+        .text {
+          color: #ff5000;
+        }
+      }
+    }
+  }
+
+  .am-list-body:before {
+    content: "" !important;
+    background-color: #f5f6f8 !important;
+  }
+
+  .am-list-body:after {
+    content: "" !important;
+    background-color: #f5f6f8 !important;
+  }
+
+  .am-tabs-default-bar-tab:after {
+    content: "" !important;
+    background-color: #f5f6f8 !important;
+  }
+}

@@ -1,0 +1,81 @@
+.--goods-list-component {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  .coupon-info {
+    background: #ff8816;
+    height: 0.3rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #fff;
+  }
+
+  .am-pull-to-refresh-content-wrapper {
+    overflow: visible;
+  }
+  .am-list-body::after {
+    background: #fff;
+  }
+  .list-view {
+    flex: 1;
+    &.is-coupon,
+    &.newconner-list {
+      .am-list-body {
+        padding-top: 0.1rem;
+      }
+    }
+
+    .am-list-view-scrollview-content.am-list {
+      background: #fff;
+    }
+    .am-list-body::before {
+      display: none;
+    }
+    .list-view-section-body {
+      padding: 0 0.15rem;
+    }
+    .am-list-footer {
+      background-color: transparent;
+    }
+    .am-list-view-scrollview-content.am-list {
+      background: transparent;
+    }
+    &.type1 {
+      background: #fff;
+      .am-list-body::after {
+        background: #fff;
+      }
+      .list-view-section-body {
+        > div {
+          margin-bottom: 0.15rem;
+        }
+      }
+    }
+    &.type2 {
+      background-image: linear-gradient(
+        180deg,
+        #ffffff 7%,
+        #f5f6f8 31%
+      ) !important;
+
+      .am-list-body::after {
+        background: #f5f6f8;
+      }
+      .list-view-section-body {
+        background-image: linear-gradient(
+          180deg,
+          #ffffff 7%,
+          #f5f6f8 31%
+        ) !important;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+
+        > div {
+          margin-bottom: 0.1rem;
+        }
+      }
+    }
+  }
+}

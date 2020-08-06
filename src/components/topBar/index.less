@@ -1,0 +1,100 @@
+.--RoundTopGroup {
+  display: flex;
+  background: white;
+  align-items: center;
+  width: 100%;
+  height: 0.45rem;
+  z-index: 10;
+  flex: none;
+
+  background: rgba(255, 255, 255, 1);
+  border-radius: 0rem 0rem 0.1rem 0.1rem;
+
+  position: relative;
+
+  .back {
+    z-index: 1;
+    position: absolute;
+    width: auto;
+    height: 0.2rem;
+    display: block;
+    top: 0.125rem;
+    left: 0.1rem;
+  }
+
+  .titleName {
+    z-index: 0;
+    position: absolute;
+    width: 100%;
+    font-size: 0.16rem;
+    line-height: 0.45rem;
+    text-align: center;
+    font-weight: bold;
+  }
+
+  .titleButton {
+    z-index: 0;
+    right: 0;
+    padding-left: 0.15rem;
+    padding-right: 0.15rem;
+    position: absolute;
+    font-size: 0.14rem;
+    line-height: 0.45rem;
+  }
+}
+
+.--TopGroup {
+  display: flex;
+  background: white;
+  align-items: center;
+  width: 100%;
+  height: 0.45rem;
+  z-index: 10;
+  flex: none;
+  position: relative;
+
+  .back {
+    z-index: 1;
+    position: absolute;
+    width: auto;
+    height: 0.2rem;
+    display: block;
+    top: 0.125rem;
+    left: 0.1rem;
+  }
+
+  .titleName {
+    z-index: 0;
+    flex: 1;
+    font-size: 0.16rem;
+    line-height: 0.2rem;
+    font-weight: bold;
+    text-align: center;
+    padding: 0 0.4rem;
+    box-sizing: border-box;
+    -webkit-box-sizing:border-box;
+  }
+
+  .rightTitle {
+    z-index: 0;
+    right: 0.15rem;
+    margin-left: 0.15rem;
+    position: absolute;
+    font-size: 0.14rem;
+    line-height: 0.45rem;
+    height: 100%;
+    display: flex;
+    align-items: center;
+  }
+
+  .rightGroup {
+    z-index: 0;
+    right: 0rem;
+    position: absolute;
+    font-size: 0.14rem;
+    line-height: 0.45rem;
+    height: 100%;
+    display: flex;
+    align-items: center;
+  }
+}

@@ -1,0 +1,112 @@
+.--flash-sale-page {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  .sale-tabs {
+    display: flex;
+    position: relative;
+    .left-arror,
+    .right-arror {
+      position: absolute;
+      top: 0;
+      height: 100%;
+      display: flex;
+      align-items: center;
+      img {
+        height: 0.1rem;
+      }
+    }
+    .left-arror {
+      left: 0;
+      padding-left: 0.15rem;
+      padding-right: 0.1rem;
+    }
+    .right-arror {
+      right: 0;
+      padding-right: 0.15rem;
+      padding-left: 0.1rem;
+    }
+    .tab {
+      width: 50%;
+      flex-shrink: 0;
+      height: 0.5rem;
+      display: inline-block;
+      background: #a285de;
+      color: #fff;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      font-size: 0.16rem;
+      position: relative;
+      .tag {
+        font-size: 0.12rem;
+        margin-top: 0.03rem;
+      }
+      &.active {
+        background: #7f4fe3;
+      }
+      .bottom-arror {
+        width: 0.12rem;
+        height: 0.06rem;
+        position: absolute;
+        bottom: -0.06rem;
+        left: 50%;
+        transform: translateX(-50%);
+      }
+    }
+  }
+
+  .count-down-container {
+    display: flex;
+    padding: 0 0.15rem;
+    justify-content: space-between;
+    align-items: center;
+    height: 0.5rem;
+    > div:first-child {
+      font-size: 18px;
+      color: #7f4fe3;
+      font-weight: bold;
+    }
+    > div:last-child {
+      display: flex;
+      align-items: center;
+      > span {
+        font-size: 0.12rem;
+        margin-right: 0.07rem;
+      }
+    }
+  }
+
+  .am-pull-to-refresh-content-wrapper {
+    overflow: visible;
+  }
+
+  .list-view {
+    flex: 1;
+    .list-view-section-body {
+      background: #f5f6f8;
+    }
+    .am-list-body::before {
+      display: none;
+    }
+    .am-list-body::after {
+      display: none;
+    }
+    .list-view-section-body {
+      padding: 0 0.15rem;
+    }
+    .am-list-footer {
+      background-color: transparent;
+    }
+    .am-list-view-scrollview-content.am-list {
+      background: transparent;
+    }
+
+    .list-view-section-body {
+      > div {
+        margin-bottom: 0.15rem;
+      }
+    }
+  }
+}

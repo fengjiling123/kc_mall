@@ -1,0 +1,58 @@
+.--NormalActivity {
+  height: 100%;
+  width: 100%;
+  overflow: scroll;
+  position: relative;
+
+  .rule-icon {
+    position: fixed;
+    bottom: 1.24rem;
+    right: 0;
+    height: 0.9rem;
+    width: 0.3rem;
+    border-radius: 10px 0px 0px 10px;
+    overflow: hidden;
+    z-index: 88;
+  }
+  .rule-modal {
+    position: absolute;
+    z-index: 99;
+    left: 0;
+    top: 0;
+    height: 100%;
+    width: 100%;
+    padding-top: .7rem;
+    box-sizing: border-box;
+    .mask {
+      background: rgba(0, 0, 0, 0.7);
+      position: absolute;
+      width: 100%;
+      height: 100%;
+      left: 0;
+      top: 0;
+      z-index: 1;
+    }
+
+    .close-icon {
+      position: absolute;
+      width: .4rem;
+      top: 0.16rem;
+      right: 0.5rem;
+      z-index: 2;
+    }
+    .content {
+      width: 2.8rem;
+      // height: 4.7rem;
+      max-height: 4.7rem;
+      background: #fff;
+      position: relative;
+      z-index: 2;
+      margin: 0 auto;
+      overflow: auto;
+
+      .rule-img {
+        max-width: 100%;
+      }
+    }
+  }
+}

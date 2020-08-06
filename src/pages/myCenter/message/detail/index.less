@@ -1,0 +1,249 @@
+.--messageDetailPage {
+  display: flex;
+  flex-direction: column;
+  background: #f5f6f8;
+  width: 100vw;
+  height: 100vh;
+
+  .sendView {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    top: 0.5rem;
+    width: 100%;
+    margin-top: 0.2rem;
+    margin-bottom: 0.2rem;
+    .drugGroup {
+      display: flex;
+      justify-content: center;
+      flex-direction: row;
+      width: 85%;
+      background: white;
+      border-radius: 0.05rem;
+      padding: 0.1rem;
+
+      .drugContent {
+        display: flex;
+        flex: auto;
+        flex-direction: column;
+        justify-content: space-between;
+        margin-left: 0.1rem;
+        margin-top: 0.03rem;
+
+        .amountGroup {
+          display: flex;
+          flex-direction: row;
+          justify-content: space-between;
+
+          .priceGroup {
+            display: flex;
+            flex-direction: row;
+            color: #FF5000;
+            align-items: flex-end;
+            .pricePrefix {
+              font-size: 0.12rem;
+              margin-bottom: 0.01rem;
+            }
+            .sales {
+              margin-left: 0.1rem;
+              font-size: 0.12rem;
+              margin-bottom: 0.01rem;
+              color: #657281;
+            }
+          }
+        }
+      }
+    }
+    .send {
+      background: #ffb516;
+      color: white;
+      border-radius: 0.05rem;
+      margin: auto;
+      width: 0.6rem;
+      text-align: center;
+      line-height: 0.2rem;
+      height: 0.2rem;
+    }
+  }
+
+  .bottomGroup {
+    display: flex;
+    position: absolute;
+    //position: fixed;
+    flex-direction: column;
+    width: 100%;
+    bottom: 0;
+  }
+
+  .inputParent {
+    padding-top: 0.1rem;
+    padding-bottom: 0.1rem;
+    display: flex;
+    flex-direction: row;
+    background: white;
+    width: 100%;
+    height: auto;
+
+    .inputImg {
+      marginleft: 0.12rem;
+      marginright: 0.12rem;
+      width: 0.4rem;
+      height: 0.35rem;
+      position: relative;
+      overflow: hidden;
+      flex: none;
+
+      .imageUp {
+        position: absolute;
+        opacity: 0;
+        height: 100%;
+        width: 100%;
+        left: 0;
+        top: 0;
+        z-index: 1;
+      }
+    }
+
+    .inputGroup {
+      min-height: 0.25rem;
+      flex: auto;
+      height: auto;
+      background: rgba(245, 246, 248, 1);
+      border-radius: 0.18rem;
+      margin-right: 0.12rem;
+      padding: 0rem 0.2rem 0rem 0.05rem;
+      .input {
+        width: 100%;
+        word-break: break-all;
+        padding: 0.1rem 0.1rem 0.1rem 0.1rem;
+      }
+    }
+    .inputSend {
+      flex: none;
+      height: 0.35rem;
+      line-height: 0.35rem;
+      margin-right: 0.2rem;
+      color: #3776ec;
+      font-size: 0.14rem;
+    }
+  }
+
+  .messages {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .messageBody {
+    display: flex;
+    flex-direction: column;
+    flex: none;
+
+    .time {
+      text-align: center;
+      height: 0.4rem;
+      line-height: 0.4rem;
+    }
+
+    .messageGroup {
+      display: flex;
+      flex-direction: row;
+      margin-bottom: 0.1rem;
+    }
+
+    .messageGroup.left {
+      margin-left: 0.1rem;
+    }
+
+    .messageGroup.right {
+      margin-right: 0.1rem;
+      justify-content: flex-end;
+    }
+
+    .drugGroup {
+      display: flex;
+      flex-direction: row;
+      width: 80%;
+      margin-right: 0.1rem;
+      background: white;
+      border-radius: 0.05rem;
+      padding: 0.1rem;
+
+      .drugContent {
+        display: flex;
+        flex: auto;
+        flex-direction: column;
+        justify-content: space-between;
+        margin-left: 0.1rem;
+        margin-top: 0.03rem;
+
+        .amountGroup {
+          display: flex;
+          flex-direction: row;
+          justify-content: space-between;
+
+          .priceGroup {
+            display: flex;
+            flex-direction: row;
+            color: #FF5000;
+            align-items: flex-end;
+            .pricePrefix {
+              font-size: 0.12rem;
+              margin-bottom: 0.01rem;
+            }
+            .sales {
+              margin-left: 0.1rem;
+              font-size: 0.12rem;
+              margin-bottom: 0.01rem;
+              color: #657281;
+            }
+          }
+        }
+      }
+    }
+    .messageContent {
+      word-break: break-all;
+      padding: 0.05rem 0.1rem;
+    }
+
+    .messageContent.left {
+      margin-left: 0.1rem;
+      margin-right: 0.4rem;
+      background: rgba(255, 255, 255, 1);
+      border: 0.05rem solid rgba(255, 255, 255, 1);
+      border-radius: 0.05rem;
+    }
+
+    .messageContent.right {
+      margin-right: 0.1rem;
+      margin-left: 0.4rem;
+      color: white;
+      background: rgba(55, 118, 236, 1);
+      border: 0.1rem solid rgba(55, 118, 236, 0.1);
+      border-radius: 0.05rem;
+    }
+  }
+
+  .emoji {
+    display: none;
+  }
+
+  .emoji-mart {
+    width: 100% !important;
+  }
+  .emoji-mart-search {
+    display: none;
+    overflow: hidden !important;
+  }
+  .emoji-mart-category:nth-child(2) {
+    display: none;
+  }
+  .emoji-mart-category-label {
+    display: none;
+    overflow: hidden !important;
+  }
+  .emoji-mart-bar {
+    display: none;
+    overflow: hidden !important;
+  }
+}

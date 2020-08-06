@@ -1,0 +1,66 @@
+.--messagePage {
+  display: flex;
+  flex-direction: column;
+  background: #ffffff;
+  height: 100vh;
+
+  .messageNotice {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    height: 0.7rem;
+    line-height: 0.7rem;
+    margin-right: 0.15rem;
+    .content {
+      flex: auto;
+      color: #2d343b;
+      font-size: 0.14rem;
+      font-weight: bold;
+    }
+    .count {
+      width: 0.3rem;
+      height: 0.19rem;
+      padding: 0.01rem 0.05rem;
+      line-height: 0.19rem;
+      background: rgba(255, 181, 22, 1);
+      border-radius: 10px;
+      color: #ffffff;
+      text-align: center;
+      margin-right: 0.1rem;
+    }
+  }
+
+  .line {
+    height: 0.01rem;
+    width: 100%;
+    background: #f5f6f8;
+  }
+
+  .messageItem {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    height: 0.7rem;
+    flex: auto;
+    margin-right: 0.15rem;
+
+    .right {
+      width: 100%;
+      .message {
+        font-size: 16px;
+        color: #2d343b;
+      }
+      .message.read {
+        color: #A0A3A6;
+      }
+      .time {
+        margin-top: 0.1rem;
+        color: #657281;
+        font-size: 12px;
+      }
+      .time.read {
+        color: #657281;
+      }
+    }
+  }
+}
